@@ -24,9 +24,11 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        int[] array = {2, 3, 1, 0, 2, 5, 3};
-//        int[] array = {2, 3, 1, 0, 4, 5, 6};
 //        int[] array = {};
+//        int[] array = {2, 3, 1, 0, 4, 5, 6};
+        int[] array = {2, 3, 1, 0, 2, 5, 3};
+
+
         duplicationNumber(array);
 
     }
