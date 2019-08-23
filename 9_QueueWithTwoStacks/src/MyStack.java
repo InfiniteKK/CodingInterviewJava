@@ -5,8 +5,8 @@ public class MyStack {
 
     public MyStack(int maxSize) {
         this.maxSize = maxSize;
-        stackArray = new long[maxSize];
-        top = -1;
+        this.stackArray = new long[maxSize];
+        this.top = -1;
     }
 
     public void push(long element) {
