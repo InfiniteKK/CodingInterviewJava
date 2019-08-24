@@ -1,5 +1,4 @@
 public class Application {
-
     public static void main(String[] args) {
 //        int[] pre = {};
 //        int[] in = {};
@@ -16,6 +15,5 @@ public class Application {
         demo.inOrderTraverse(head);
         System.out.printf("\nPostOrder:\t");
         demo.postOrderTraverse(head);
-
     }
 }
