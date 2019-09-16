@@ -41,7 +41,7 @@ public class ListNodeDemo {
     }
 
     public void deleteNode(ListNodeNode head, ListNode toBeDeletedNode) {
-        if (head == null || toBeDeletedNode == null) {
+        if (head.listNode == null || toBeDeletedNode == null) {
             System.out.println("Error: input error.");
             return;
         }
