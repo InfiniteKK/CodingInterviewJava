@@ -40,25 +40,23 @@ public class ListNodeDemo {
         return node;
     }
 
-    public ListNode deleteNode(ListNode head, ListNode toBeDeletedNode) {
+    public void deleteNode(ListNodeNode head, ListNode toBeDeletedNode) {
         if (head == null || toBeDeletedNode == null) {
             System.out.println("Error: input error.");
-            return null;
+            return;
         }
         if (toBeDeletedNode.next != null) {
             toBeDeletedNode.value = toBeDeletedNode.next.value;
             toBeDeletedNode.next = toBeDeletedNode.next.next;
-        } else if (head == toBeDeletedNode) {
-            head = null;
+        } else if (head.listNode == toBeDeletedNode) {
+            head.listNode = null;
         } else {
-            ListNode temp = head;
-            while (temp.next != toBeDeletedNode) {
-                temp = temp.next;
+            ListNodeNode temp = head;
+            while (temp.listNode.next != toBeDeletedNode) {
+                temp.listNode = temp.listNode.next;
             }
-            temp.next = null;
+            temp.listNode.next = null;
         }
-
-        return head;
 
     }
 }

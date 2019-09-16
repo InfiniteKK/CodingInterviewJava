@@ -1,10 +1,10 @@
 public class Application {
     public static void main(String[] args) {
         ListNodeDemo demo = new ListNodeDemo();
-        ListNode head = demo.constructList(6);
-        demo.printList(head);
-        ListNode toBeDeletedNode = demo.getNode(head,2);
-        head = demo.deleteNode(head,toBeDeletedNode);
-        demo.printList(head);
+        ListNodeNode head = new ListNodeNode(demo.constructList(1));
+        demo.printList(head.listNode);
+        ListNode toBeDeletedNode = demo.getNode(head.listNode,0);
+        demo.deleteNode(head,toBeDeletedNode);
+        demo.printList(head.listNode);
     }
 }
