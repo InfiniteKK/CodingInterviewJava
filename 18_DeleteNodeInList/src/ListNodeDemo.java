@@ -35,7 +35,7 @@ public class ListNodeDemo {
             head = head.next;
         }
         if (node == null) {
-            System.out.println("Error: " + value + "is not in list.");
+            System.out.println("Error: " + value + " is not in list.");
         }
         return node;
     }
