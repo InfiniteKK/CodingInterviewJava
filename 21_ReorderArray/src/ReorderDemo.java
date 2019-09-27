@@ -1,5 +1,5 @@
-public class ReorderDemo {
-    public void reorder_1(int[] array){
+public class ReorderDemo{
+    public void reorder_1(int[] array,IsOdd isOdd){
         if(array.length == 0){
             System.out.println("Error: invalid input.");
             return;
@@ -7,10 +7,10 @@ public class ReorderDemo {
         int begin = 0;
         int end = array.length - 1;
         while (begin < end){
-            while (begin < end && (array[begin]&0x1) != 0){
+            while (begin < end && !isOdd.check(array[begin])){
                 begin++;
             }
-            while (begin < end && (array[end] & 0x1) == 0){
+            while (begin < end && isOdd.check(array[end])){
                 end--;
             }
             if (begin < end){
@@ -20,6 +20,7 @@ public class ReorderDemo {
             }
         }
     }
+
 
 }
 
