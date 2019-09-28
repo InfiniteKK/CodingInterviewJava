@@ -1,5 +1,3 @@
-import com.sun.scenario.effect.impl.state.LinearConvolveKernel;
-
 public class KthNodeDemo {
     public void createList(ListNode head, int n) {
         ListNode temp = head;
