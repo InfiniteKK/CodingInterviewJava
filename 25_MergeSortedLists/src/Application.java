@@ -10,7 +10,5 @@ public class Application {
         demo.printList(head2);
         ListNode mergeHead = demo.merge(head1,head2);
         demo.printList(mergeHead);
-        System.out.println("Success!!!");
-
     }
 }
